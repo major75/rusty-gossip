@@ -1,6 +1,6 @@
 # rusty-gossip
 
-An example of simple p2p gossiping network implementation written on Rust lang. Network peers use a kind of heartbeat technique to synchronize network state among each others. Peers will send an arbitrary messages to each other with time period (in seconds) specified as a per peer runtime parameter.
+An example of simple p2p gossiping network implementation written on Rust lang. Network peers use a kind of heartbeat technique to synchronize network state among each others. Peers will send an arbitrary messages to each other within time period (in seconds) specified as a per peer runtime parameter.
 
 #### Program usage:
 
@@ -18,7 +18,7 @@ Options:
   -V, --version            Print version
 ```
 
-Also you can setup program options in .env file placed in the same directory with the executable. Then you will able to run the program without command line options. Be aware cli options have higher priority over .env file.
+Also you can setup program options in .env file placed in the same directory with the executable. Then you will be able to run the program without command line options. Be aware cli options have higher priority over .env file.
 
 #### Examples of usage via command line options:
 
