@@ -1,0 +1,22 @@
+[package]
+name = "rusty-gossip"
+description = "A simple p2p gossip network peer implementation"
+version = "0.1.0"
+authors = ["Oleg Chongov"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.31"
+clap = { version = "4.4.6", features = ["derive"] }
+dotenv = "0.15.0"
+fern = { version = "0.6", features = ["colored"] }
+futures = "0.3.28"
+log = "^0.4.20"
+serde = {version="1.0.188", features=["derive", "serde_derive"]}
+serde_json = "1.0.107"
+settimeout = "0.1.2"
+tokio = {version="1.32.0", features=["net", "macros", "rt", "rt-multi-thread", "signal", "io-util"]}
+tokio-serde = {version="0.8.0", features=["json"]}
+tokio-util = {version="0.7.9", features=["codec","io-util"]}
